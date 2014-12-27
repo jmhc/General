@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<title> CEITComité de Estudiantes de Ingeniería Telemática</title>
+	<style>
+		.news-demo {
+		  background: #fff;
+		  padding: 20px;
+		}
+
+		.news-demo h1 {
+		  text-align: center;
+		  font-family: Arial, sans-serif;
+		  color: #777;
+		  margin-bottom: 40px;
+		}
+
+		.news-demo .p {
+		  text-align: center;
+		  font-family: Arial, sans-serif;
+		  font-size: 22px;
+		  margin-top: 70px;
+		}
+
+		.news-demo .p ~ p {
+		  margin-top: 0;
+		}
+
+		.news-demo .p a {
+		  text-decoration: underline;
+		}
+
+		.news-demo .p a:hover {
+		  color: red;
+		}
+		
+		<!--Estilos para la seccion noticia-->
+			.wrapper {
+			width:100%;
+			margin:150px auto;
+		
+			}
+			.boton-noticias{
+			width:30%;
+			display:inline-block;
+			}
+			.boti{
+				width:50px;
+				background:red;
+				height:19px;
+			}
+			.botones{
+				margin:auto;
+			}
+			
+			
+			.demof {
+			/*border: 1px solid #ccc;*/
+		/*	box-shadow: 10px 10px 5px #888888;	*/		
+		/*	border-right: 1px solid #ccc; */
+		/*	border-left: 1px solid #ccc;  */
+			/*border-top: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;*/
+			margin: 25px 0;
+			width:100%;
+			
+			}
+			.demof ul {
+			padding: 0;
+			list-style: none;
+			}
+			.demof li {
+			padding: 20px;
+			width:100%;
+			border-bottom: 1px dashed #ccc;
+			
+			}
+			.demof li.odd {
+			background: #fafafa;
+			
+			}
+			.demof li:after {
+			content: '';
+			display: block;
+			clear: both;
+			}
+			.demof img {
+			float: left;
+			width: 177px;
+			margin: 5px 15px 0 0;
+			}
+			.demof a {
+			font-family: Arial, sans-serif;
+			font-size: 20px;
+			font-weight: bold;
+			color: blue;
+			}
+			.demof p {
+			margin: 15px 0 0;
+			font-size: 14px;
+			}
+
+
+			.et-run {
+			background-color: #0cf;
+			color: white;
+			border: 1px solid black;
+			}
+	</style>
+	<link rel="stylesheet" href="css/vertical.news.slider.css?v=1.0">
+
+	
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, inicial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="js/slider.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link href='fonts/station.ttf' rel='stylesheet' type='text/css'>
+	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" media="all" />
+	<!--links usados por el slideshow-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="//use.edgefonts.net/cabin;source-sans-pro:n2,i2,n3,n4,n6,n7,n9.js"></script>
+	<script src="js/slippry.min.js"></script>
+    <link rel="stylesheet" href="css/slippry.css">
+	<!--links usados por el news ticker-->
+	
+	<!-- Grid CSS File (only needed for demo page) -->
+	<link rel="stylesheet" href="css/paragridma.css">
+	
+	<!-- Core CSS File. The CSS code needed to make eventCalendar works -->
+	<link rel="stylesheet" href="css/eventCalendar.css">
+	
+	<!-- Theme CSS file: it makes eventCalendar nicer -->
+	<link rel="stylesheet" href="css/eventCalendar_theme_responsive.css">
+
+	<!--<script src="js/jquery.js" type="text/javascript"></script>-->
+
+	<script src="js/jquery.eventCalendar.js" type="text/javascript"></script>
+	
+	<!--Links usados por el calendario-->
+
+	
+	<script src="js/jquery.easy-ticker.js"></script> 
+	
+	<!-- Core CSS File. The CSS code needed to make eventCalendar works -->
+	<link rel="stylesheet" href="css/eventCalendar.css">
+	
+	<!-- Theme CSS file: it makes eventCalendar nicer -->
+	<link rel="stylesheet" href="css/eventCalendar_theme_responsive.css">
+
+	<!--<script src="js/jquery.js" type="text/javascript"></script>-->
+
+	<script src="js/jquery.eventCalendar.js" type="text/javascript"></script>
+	
+	<!--Links usados por el calendario-->
+
+	
+	<script src="js/jquery.easy-ticker.js"></script> 
+	
+	
+</head>
+
+<body>
+	
+	<div id="m-nav-total" class="letras">
+		<div class="m-container"> <!--Barra de Navegación-->
+			<div class="m-logo">
+					
+					<a href="#"><img src="img/logo-ceit.png" alt="logo-ceit"></a>
+			</div>
+			<div id="button-navegador" >Menú<span class="icon-menu" onclick="toggleNavPanel('menu-responsive')"></span></div>
+			
+			<div id="menu-responsive">
+			<div class="m-nav">
+			
+				<ul class="limpiar">
+					<a class="link" href="#"><li class="m-li-nav">
+						Inicio
+					</li></a>
+					<a class="link" href="#"><li class="m-li-nav">
+						Nosotros
+					</li></a>
+					<a class="link" href="#"><li class="m-li-nav"> 
+						Egresados
+					</li></a>
+					<a class="link" href="#"><li class="m-li-nav">
+						Docentes
+					</li></a>
+					<a class="link" href="#"><li class="m-li-nav">
+						Actividades
+					</li></a>
+					<a class="link" href="#"><li class="m-li-nav">
+						Galerias
+					</li></a>
+					<a class="link" href="#"><li class="m-li-nav">
+						Foro
+					</li></a>
+					<a class="link" href="#"><li class="m-li-nav">
+						Contactos
+					</li></a>
+				</ul>
+			</div>
+			</div>
+			
+		</div>
+	</div>
+
+	
+	
+	
+	<script> function toggleNavPanel(x){
+	 var panel = document.getElementById(x), 
+	 navarrow = document.getElementById("navarrow"), 
+	 maxH="21.3em";
+	 if(panel.style.height == maxH){ 
+	 panel.style.height = "0em"; 
+	 navarrow.innerHTML = "&#9662;"; 
+	 } else { panel.style.height = maxH;
+	 navarrow.innerHTML = "&#9652;"; 
+	 } } </script>
+	
+	<div class="letras"><!--Contenedor de la galeria-->
+			<section id= "galeria" >
+			<article >
+				
+			<ul id="demo1">
+				<li><a href="#slide1"><img  src="img/image-4.jpg" alt="This is caption 1 <a href='#link'>Even with links!</a>"></a></li>
+				<li><a href="#slide2"><img  src="img/img-7.jpg" ></a></li>
+				<li><a href="#slide3"><img  src="img/img-6.jpg" ></a></li>
+			</ul>
+			</article>
+		</section>		
+
+		<script>
+			$(function() {
+				var demo1 = $("#demo1").slippry({
+					transition: 'fade',
+					useCSS: true,
+					speed: 1000,
+					pause: 3000,
+					auto: true,
+					preload: 'visible'
+				});
+
+				$('.stop').click(function () {
+					demo1.stopAuto();
+				});
+
+				$('.start').click(function () {
+					demo1.startAuto();
+				});
+
+				$('.prev').click(function () {
+					demo1.goToPrevSlide();
+					return false;
+				});
+				$('.next').click(function () {
+					demo1.goToNextSlide();
+					return false;
+				});
+				$('.reset').click(function () {
+					demo1.destroySlider();
+					return false;
+				});
+				$('.reload').click(function () {
+					demo1.reloadSlider();
+					return false;
+				});
+				$('.init').click(function () {
+					demo1 = $("#demo1").slippry();
+					return false;
+				});
+			});
+		</script>
+			</div>
+			
+			<div class="contenedor-titulo margen ">
+				<div class="resaltador">
+				<div class="linea-estetica"> </div>
+					<h1 class="titulo letras">Actividades</h1>
+				<div class="linea-estetica"></div>
+				</div>
+			</div> 
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+
+	<section id="actividades"><!--Sección de Actividades-->
+		<div class="container">
+			<div class="actividad">
+				<a href="#"><img class="img-responsive m-images" src="img/01.png"></a>
+				<h3 class="title-act">Stop factory farming</h3>
+				<p class="text-act"> <span>The greatness of a nation and its moral progress can be judged by the way in which its animals are treated.</span></p>
+			</div>
+			<div class="actividad">
+				<a href="#"><img class="img-responsive m-images" src="img/02.png"></a>
+				<h3 class="title-act">Stop factory farming</h3>
+				<p class="text-act"> <span>The greatness of a nation and its moral progress can be judged by the way in which its animals are treated.</span></p>
+			</div>
+			<div class="actividad">
+				<a href="#"><img class="img-responsive m-images" src="img/03.png"></a>
+				<h3 class="title-act">Stop factory farming</h3>
+				<p class="text-act"> <span>The greatness of a nation and its moral progress can be judged by the way in which its animals are treated.</span></p>
+			</div>
+			<div class="actividad">
+				<a href="#"><img class="img-responsive m-images" src="img/04.png"></a>
+				<h3 class="title-act">Stop factory farming</h3>
+				<p class="text-act"> <span>The greatness of a nation and its moral progress can be judged by the way in which its animals are treated.</span></p>
+			</div>
+
+		</div>
+	</section>
+
+	<div class=" m-not-act margen ">	<!--Contenedor de Noticias **** Contenedor de Publicaciones-->
+		<div class="m-not letras"> <!--Contenedor de Noticias-->
+		<div class="contenedor-titulo margen ">
+			<div class="resaltador2">
+				<div class="linea-estetica"> </div>
+					<h1 class="titulo">Noticias</h1>
+				<div class="linea-estetica"></div>
+			</div>
+			</div> 
+			<div class="wrapper">
+				<!-- la dimencion de las imagenes es 300 x 177-->
+				<div class="demo1 demof">
+				<ul>
+				<li  ><img  src="img/n-1.jpg" alt="Expandable Input" /><a class="letras" href="http://www.jqueryscript.net/form/jQuery-Plugin-To-Expand-Collapse-Input-Field-Expandable-Input.html"><span class="letras2" >Expandable Input</span></a>
+				<p class="not-jus">Expandable Input is a minimal jQuery plugin to smoothly expand the width of a input filed when focused/clicked and collapse it when lose focus.</p>
+				</li>
+				<li  class="letras"><img src="img/n-1.jpg" alt="jQuery Photor Plugin" /><a href="http://www.jqueryscript.net/gallery/Creating-A-Full-Page-Photo-Gallery-with-jQuery-Photor-Plugin.html"><span class="letras2" >jQuery Photor Plugin</span></a>
+				<p class="not-jus">Photor is a fast and easy jQuery plugin to create a responsive & touch-friendly full page image gallery with CSS3 transitions and transforms.</p>
+				</li>
+				<li ><img src="img/n-1.jpg" alt="Metreaux Tables" /><a href="http://www.jqueryscript.net/table/Windows-8-Style-jQuery-Data-Table-Decorator-Metreaux-Tables.html"><span class="letras2" >Metreaux Tables</span></a>
+				<p class="not-jus">Metreaux Tables is a jQuery plugin to create nice, clean, themeable, andmodern Windows 8 UI Style data tables with the power of DataTables jQuery javascript library.</p>
+				</li>
+				
+				
+				</ul>
+				</div>
+
+				
+
+			</div>
+			   
+				<script type="text/javascript">
+
+				  var _gaq = _gaq || [];
+				  _gaq.push(['_setAccount', 'UA-36251023-1']);
+				  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+				  _gaq.push(['_trackPageview']);
+
+				  (function() {
+					var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+					ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+				  })();
+
+				</script>
+		</div> 
+				<div id="m-espacio"></div>
+		
+		<div class="m-publicidad  "> <!--Contenedor de Publicidad-->
+		<div class="contenedor-titulo margen ">
+				<div class="resaltador2">
+				
+					<h1 class="titulo letras">Calendario</h1>
+				
+				</div>
+			</div> 
+			<br/>
+			
+			<div class="calendario-asociaciones ">
+			<div class="m-noticia alinear">
+			<div class="m-fecha alinear">
+			<div class="m-mes"><div class="centrar"><p class="mes">NOV</p></div></div>
+			<div class="m-dia"><div class="centrar"><span class="dia">14</span></div></div>
+			</div>
+			<div class="m-descripcion">
+			<a href="#"><span class="nombre"> Titulo completo del evento</span></a>
+			<p class="hora">2:00 PM</p>
+			<span class="lugar">Auditorio de biblioteca</span>
+			</div>
+			
+			</div>
+			<div class="m-noticia alinear">
+			<div class="m-fecha alinear">
+			<div class="m-mes"><div class="centrar"><p class="mes">NOV</p></div></div>
+			<div class="m-dia"><div class="centrar"><span class="dia">14</span></div></div>
+			</div>
+			<div class="m-descripcion">
+			<a href="#"><span class="nombre"> Titulo completo del evento</span></a>
+			<p class="hora">2:00 PM</p>
+			<span class="lugar">Auditorio de biblioteca</span>
+			</div>
+			
+			</div>
+			<div class="m-noticia alinear">
+			<div class="m-fecha alinear">
+			<div class="m-mes"><div class="centrar"><p class="mes">NOV</p></div></div>
+			<div class="m-dia"><div class="centrar"><span class="dia">14</span></div></div>
+			</div>
+			<div class="m-descripcion">
+			<a href="#"><span class="nombre"> Titulo completo del evento</span></a>
+			<p class="hora">2:00 PM</p>
+			<span class="lugar">Auditorio de biblioteca</span>
+			</div>
+			
+			</div>
+
+			</div>
+				
+				
+				<div class="margen"><!--twitter-->
+				<script src="http://platform.twitter.com/widgets.js"></script>
+				<a href="http://twitter.com/share" class="twitter-share-button"
+				data-text="#CEIT-Activo" data-url="index.html" data-count="vertical">twittear</a>
+				<br/><br/>
+
+				<!--fecebook-->
+				<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+				</div>
+
+				
+			</div>
+		</div>
+		<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.0";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+</body>
+<footer>
+	<section id="m-footer"> <!--Sección de Footer-->
+			 <section id="m-sec-footer">
+			 		<div id="m-info-dep-3">
+						<div><a href="#"><img src="img/logo-pucmm.png" alt="logo-pucmm"></a></div>
+						<div id="nombre-pucmm">
+							<div id="pucmm-name">Pontificia Universidad Católica Madre y Maestra</div><div id="pucmm-name-1">PUCMM - Santiago</div>
+						</div>
+					</div>
+					<div id="sec-info">
+						<div id="m-info-dep-1">
+							<div class="text-footer">Departamento de Ingeniería Telemática</div>
+							<div class="text-footer">Contacto:809-580-1992</div><div class="text-footer">Extensión:4542</div>
+						</div>
+						<div id="m-info-dep-2">
+							<div class="text-footer">PUCMM - Campus Santiago</div>
+							<div class="text-footer">Autopista Duarte Km 1 1/2</div><div class="text-footer">Santiago, República Dominicana.</div>
+						</div>
+					</div>
+			 </section>
+			 <section id="m-princ-footer">
+				<ul id="footer-fin">
+					<li class="m-li-footer">
+						<a href="#"><span class="icon-facebook"></a>
+					</li>
+					<li class="m-li-footer">
+						<a href="#"><span class="icon-twitter"></a>
+					</li>
+					<li class="m-li-footer">
+						<a href="#"><span class="icon-instagram"></a>
+					</li>
+					<li class="m-li-footer">
+						<a href="#"><span class="icon-googleplus"></a>
+					</li>
+					<li class="m-li-footer">
+						<a href="#"><span class="icon-youtube"></a>
+					</li>
+					<li class="m-li-footer-cr">
+						© 2014 Comité de Estudiantes de Ingeniería Telemática - CEIT
+					</li>
+				</ul>
+			 </section>
+	</section>
+</footer>	
+</html>
+
+
+
